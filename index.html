@@ -140,11 +140,20 @@
               and type. Our game uses pokemon-inspired type effectiveness to create an immersive, strategic experience!
               </p>
               <p>
-              For this project we used a critter class, an item class, and a player class. We also used an enum for our types
-              and for the state that the game is in, wo there can be multiple phases and rounds for maximum strategy!
+              Key features of this project:
+              Critter class with health, attack, and type
+              Item class with temporary attack and armor to augment the critters
+              Team composition: teams are made up of 3 critters that can hold a maximum of 1 item to augment their stats
+              Gameplay: we used a collide method that had the two leading critters attack one another until all critters are defeated
               </p>
               <p>
-              We used a state machine 
+              Implementation:
+              To implement this game, we used a state machine for each phase of the game, with the states as enums.
+              Phase 1: NAMING. Each player chooses their name for the game
+              Phase 2: SETUP. players pick their team and items from a list of randomly generated critters and items
+              Phase 3: PREPARATION: players assign items to their critters and switch their order if they desire
+              Phase 4: BATTLE. player 1 and player 2's teams collide until one team is defeated
+              Phase 5: GAMEOVER. this phase is reached once a player's score reaches 5 (a player's score is incremented after every round won)
               </p>
 
 
@@ -183,7 +192,7 @@
           <div class="col-md-12 text-center">
             <p class="mb-0">
               <span class="icon-graduation-cap d-block h4 text-primary"></span>
-              <a href="">Resume</a>
+              <a href="https://docs.google.com/document/d/18ExyizJF_GfvqeqQ9OJQzr8Rqz3p7p2WWJGKast2wYE/edit?tab=t.0" target="_blank" rel="noopener noreferrer">Resume</a>
             </p>
           </div>
         </div>
